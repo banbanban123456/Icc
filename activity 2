@@ -1,0 +1,16 @@
+# act.2 Write a program that will compute the students average
+name = input("enter your name: ")
+print("hello " + name + " please answer each question below")
+science = input("Enter your Science grade: ")
+math = input("Enter your Math grade: ")
+english = input("Enter your English grade: ")
+
+print("Hi " + name + " your grades are \n" + science + " in Science \n" + math + " in Math \n" + english + " in Eglish")
+
+total = float(science) + float(math) + float(english)
+average = float(total) / 3
+print(average)
+if average < 75:
+    print("you failed!")    
+if average > 75:
+    print("Congratulations you passed!")
